@@ -40,6 +40,21 @@
 ;;     edited file, then removed from the buffer, as WikipediaFS anyway
 ;;     removes it itself after using it.
 
+;;; Dependencies:
+
+;; wikipediafs.el requires wikipedia-mode
+
+;;; Installation:
+
+;; Make sure to place `wikipediafs.el` somewhere in the load-path, and add
+;; the following line to your `.emacs` file:
+;;     (require 'wikipediafs)
+
+;;; Usage:
+
+;; As of today, all provided features work in the background, and require no
+;; user intervention unless prompted.
+
 ;;; Code:
 
 (require 'wikipedia-mode)
