@@ -27,7 +27,18 @@
 
 ;;; Commentary:
 
-;; wikipediafs.el
+;; wikipediafs.el enhances wikipedia-mode when using WikipediaFS
+;; (http://wikipediafs.sourceforge.net).
+
+;; Tested with WikipediaFS 0.3-5 from Debian Lenny, on Emacs 23 (CVS
+;; snapshot).
+
+;; Features:
+;;   - changes summary, i.e. commit message: unless the buffer already has
+;;     a WikipediaFS-style changes summary ([[Summary: ...]]), one is asked
+;;     to enter one at buffer save time; the input text is appended to the
+;;     edited file, then removed from the buffer, as WikipediaFS anyway
+;;     removes it itself after using it.
 
 ;;; Code:
 
