@@ -116,8 +116,8 @@ This function is designed to be run by `after-save-hook'."
   (interactive)
   (and (is-wikipediafs-buffer)
        (buffer-has-wikipediafs-summary)
-       (delete-region (match-beginning 0) (match-end 0))
-       (set-buffer-modified-p nil)))
+       (delete-region (match-beginning 0) (match-end 0)))
+  (set-buffer-modified-p nil))
 
 (add-hook 'before-save-hook 'maybe-insert-wikipediafs-summary)
 (add-hook 'after-save-hook 'remove-wikipediafs-summary)
